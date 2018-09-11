@@ -21,7 +21,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	unzip \
 	wget \
 	xdg-user-dirs \
-	zip
+	zip \
+    && pip3 install setuptools wheel
 
-# Install our Python dependencies
-RUN pip3 install setuptools wheel
